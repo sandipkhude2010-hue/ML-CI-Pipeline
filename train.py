@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
 
 # Load dataset
-df = pd.read_csv("content/airlines_flights_data.csv")
+df = pd.read_csv("airlines_flights_data.csv")
 
 # Remove unnecessary index and flight columns
 df = df.drop(columns=["index", "flight"], errors="ignore")
